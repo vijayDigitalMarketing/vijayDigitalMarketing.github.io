@@ -106,13 +106,38 @@ body {
 /* CTA */
 .cta {
   text-align: center;
-  padding: 80px;
-  background: linear-gradient(135deg,#00ffcc,#1877F2);
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #00ffcc, #1877F2);
+  color: #020617;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* BUTTON FIX */
+.cta a {
+  display: inline-block;
+  background: white;
+  color: #020617;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cta a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 .cta a {
-  background: black;
-  color: white;
-  padding: 10px 20px;
+  background: white;
+  color: #020617;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
 /* STICKY */
