@@ -1,25 +1,16 @@
-/* ===========================
-   BLACK DIGITAL MARKETING THEME
-   =========================== */
-
 :root {
-  --bg: #0b0f19;
-  --card: #111827;
+  --bg: #020617;
+  --card: #0b1220;
   --text: #e5e7eb;
   --muted: #9ca3af;
   --primary: #38bdf8;
   --accent: #22c55e;
 }
 
-/* Reset */
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  background: radial-gradient(circle at top, #111827, #020617);
+  font-family: Inter, Arial, sans-serif;
+  background: radial-gradient(circle at top, #0b1220, #020617);
   color: var(--text);
   line-height: 1.7;
 }
@@ -34,7 +25,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 48px;
   background: linear-gradient(90deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -42,14 +33,12 @@ body {
 
 .subtitle {
   color: var(--muted);
-  font-size: 18px;
   margin: 20px 0;
 }
 
-.cta-buttons a {
+.cta {
   display: inline-block;
-  margin: 10px;
-  padding: 12px 26px;
+  padding: 12px 28px;
   border-radius: 999px;
   background: linear-gradient(90deg, var(--primary), var(--accent));
   color: #020617;
@@ -64,38 +53,13 @@ body {
   padding: 80px 24px;
 }
 
-h2 {
-  font-size: 26px;
-  margin-bottom: 15px;
-  position: relative;
-}
-
 h2::after {
   content: "";
   width: 50px;
   height: 4px;
   background: linear-gradient(90deg, var(--primary), var(--accent));
   display: block;
-  margin-top: 8px;
-}
-
-/* CARDS */
-.card {
-  background: linear-gradient(180deg, #0b1220, #020617);
-  border: 1px solid #1f2933;
-  padding: 24px;
-  border-radius: 16px;
-  margin-bottom: 25px;
-}
-
-.card h3 {
-  color: var(--primary);
-  margin-bottom: 5px;
-}
-
-.date {
-  color: var(--muted);
-  font-size: 14px;
+  margin-top: 6px;
 }
 
 /* METRICS */
@@ -106,32 +70,30 @@ h2::after {
 }
 
 .metric-card {
-  background: linear-gradient(160deg, #020617, #020617);
+  background: var(--card);
   border: 1px solid #1f2933;
   padding: 30px;
-  border-radius: 18px;
+  border-radius: 16px;
   text-align: center;
 }
 
 .metric-card h3 {
-  font-size: 36px;
   color: var(--accent);
+  font-size: 36px;
 }
 
-/* SKILLS */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.badge {
-  padding: 8px 14px;
-  margin: 6px;
-  border-radius: 999px;
-  background: #020617;
+/* CARDS */
+.card {
+  background: var(--card);
   border: 1px solid #1f2933;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.date {
+  color: var(--muted);
   font-size: 14px;
-  font-weight: 600;
 }
 
 /* FOOTER */
@@ -139,13 +101,9 @@ h2::after {
   text-align: center;
   padding: 30px;
   color: var(--muted);
-  font-size: 14px;
 }
 
-/* MOBILE */
-@media (max-width: 640px) {
-  .hero h1 {
-    font-size: 36px;
-  }
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
 }
-``
