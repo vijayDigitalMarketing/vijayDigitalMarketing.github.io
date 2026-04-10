@@ -89,6 +89,60 @@
     </div>
   </section>
 
+  <!-- CERTIFICATIONS -->
+<section class="section">
+  <h2>🏆 Certifications & Testimonials</h2>
+
+  <div class="grid">
+
+    <!-- CERTIFICATE -->
+    <div class="card cert-card" onclick="openModal('images/meta-cert.png')">
+      <img src="images/meta-cert.png" alt="Meta Certification">
+      
+      <div class="badge">Verified</div>
+
+      <h3>Meta Digital Marketing Certification</h3>
+      <p>Official certification from Meta (Facebook)</p>
+
+      <a href="https://www.credly.com/badges/f6acf882-f28a-403c-a576-65019797292f" target="_blank">
+        View Credential →
+      </a>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div class="card cert-card" onclick="openModal('images/testimonial.png')">
+      <img src="images/testimonial.png" alt="Recommendation Letter">
+
+      <div class="badge">Trusted</div>
+
+      <h3>Letter of Recommendation</h3>
+      <p>From CollegePur Marketing Team</p>
+
+      <a href="images/testimonial.png" target="_blank">
+        View Full Letter →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(src) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
   <!-- CTA -->
   <section class="cta" id="contact">
     <h2>Let’s Grow Your Brand 🚀</h2>
