@@ -1,140 +1,151 @@
-/* ==============================
-   Digital Marketing Theme
-   ============================== */
+/* ===========================
+   BLACK DIGITAL MARKETING THEME
+   =========================== */
 
 :root {
-  --primary: #1a73e8;
-  --secondary: #0f172a;
+  --bg: #0b0f19;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #38bdf8;
   --accent: #22c55e;
-  --bg: #f8fafc;
-  --card: #ffffff;
-  --text: #334155;
-  --muted: #64748b;
 }
 
-/* Base */
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(180deg, #f8fafc, #eef4ff);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at top, #111827, #020617);
   color: var(--text);
   line-height: 1.7;
 }
 
-.container {
-  max-width: 980px;
-  margin: auto;
-  padding: 40px 24px;
-  background: var(--card);
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-}
-
-/* Header */
-.header {
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-bottom: 30px;
 }
 
-.header h1 {
-  font-size: 40px;
-  margin-bottom: 8px;
-  background: linear-gradient(90deg, #1a73e8, #22c55e);
+.hero h1 {
+  font-size: 52px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.header p {
-  font-size: 18px;
+.subtitle {
   color: var(--muted);
+  font-size: 18px;
+  margin: 20px 0;
 }
 
-/* Contact links */
-.contact {
-  margin-top: 12px;
-}
-
-.contact a {
-  margin: 0 10px;
-  color: var(--primary);
+.cta-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: #020617;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: 600;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+/* MAIN */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 24px;
 }
 
-/* Section Titles */
 h2 {
-  margin-top: 50px;
-  font-size: 24px;
-  color: var(--secondary);
+  font-size: 26px;
+  margin-bottom: 15px;
   position: relative;
 }
 
 h2::after {
   content: "";
-  width: 60px;
+  width: 50px;
   height: 4px;
   background: linear-gradient(90deg, var(--primary), var(--accent));
   display: block;
-  margin-top: 6px;
-  border-radius: 8px;
+  margin-top: 8px;
 }
 
-/* Cards (Experience / Education) */
-h3 {
-  font-size: 20px;
+/* CARDS */
+.card {
+  background: linear-gradient(180deg, #0b1220, #020617);
+  border: 1px solid #1f2933;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
   color: var(--primary);
-  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
-ul {
-  padding-left: 22px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Highlight Metrics */
-strong {
-  color: var(--secondary);
-}
-
-/* Skill Badges */
-.badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #e0ecff, #f0fdf4);
-  color: #0f172a;
-  padding: 8px 14px;
-  border-radius: 999px;
+.date {
+  color: var(--muted);
   font-size: 14px;
-  margin: 6px 6px 0 0;
-  font-weight: 600;
-  border: 1px solid #dbeafe;
 }
 
-/* Footer */
+/* METRICS */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.metric-card {
+  background: linear-gradient(160deg, #020617, #020617);
+  border: 1px solid #1f2933;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.metric-card h3 {
+  font-size: 36px;
+  color: var(--accent);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 999px;
+  background: #020617;
+  border: 1px solid #1f2933;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* FOOTER */
 .footer {
   text-align: center;
-  margin-top: 60px;
-  font-size: 14px;
+  padding: 30px;
   color: var(--muted);
+  font-size: 14px;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 640px) {
-  .header h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  .container {
-    padding: 24px 18px;
+  .hero h1 {
+    font-size: 36px;
   }
 }
+``
