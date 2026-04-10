@@ -10,145 +10,132 @@
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>🚀 Digital Marketing Specialist</h1>
-
-      <p>
-        I help brands grow using 
-        <span>data-driven strategies</span>, 
-        <span>paid ads</span>, and 
-        <span>viral content</span>.
-      </p>
-
-      <div class="stats">
-        <div class="stat"><strong>69M+</strong><p>Views</p></div>
-        <div class="stat"><strong>21.5K</strong><p>Subscribers</p></div>
-        <div class="stat"><strong>100K+</strong><p>Impressions</p></div>
-      </div>
-
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section glass">
-    <h2>👨‍💻 About Me</h2>
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>🚀 Digital Marketing Specialist</h1>
     <p>
-      Meta Certified Digital Marketing Associate with expertise in Meta Ads,
-      social media growth, and performance marketing. I focus on scaling brands
-      using analytics, trends, and high-performing content strategies.
+      I help brands grow using 
+      <span>data-driven strategies</span>, 
+      <span>paid ads</span>, and 
+      <span>viral content</span>.
     </p>
-  </section>
 
-  <!-- RESULTS -->
-  <section class="section">
-    <h2>📊 Proven Results</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>YouTube Growth</h3>
-        <p>69M+ views & 21.5K subscribers in 2.6 months.</p>
-      </div>
-
-      <div class="card">
-        <h3>Twitter Growth</h3>
-        <p>100K+ impressions in just 1 month.</p>
-      </div>
+    <div class="stats">
+      <div class="stat"><h2 class="counter" data-target="69000000">0</h2><p>Views</p></div>
+      <div class="stat"><h2 class="counter" data-target="21500">0</h2><p>Subscribers</p></div>
+      <div class="stat"><h2 class="counter" data-target="100000">0</h2><p>Impressions</p></div>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section class="section glass">
-    <h2>💼 Services</h2>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
 
-    <div class="grid">
-      <div class="card">📢 Meta Ads Campaigns</div>
-      <div class="card">🎯 Audience Targeting</div>
-      <div class="card">📈 Growth Strategy</div>
-      <div class="card">🎬 Video Editing</div>
-      <div class="card">🔍 SEO Optimization</div>
-    </div>
-  </section>
+<!-- ABOUT -->
+<section class="section glass fade">
+  <h2>👨‍💻 About Me</h2>
+  <p>
+    Meta Certified Digital Marketing Associate with expertise in Meta Ads,
+    social media growth, and performance marketing. I scale brands using
+    analytics, trends, and high-performing content strategies.
+  </p>
+</section>
 
-  <!-- PROJECTS -->
-  <section class="section">
-    <h2>📁 Projects</h2>
+<!-- RESULTS -->
+<section class="section fade">
+  <h2>📊 Proven Results</h2>
+  <div class="grid">
+    <div class="card">69M+ Views in 2.6 years</div>
+    <div class="card">100K+ Impressions in 1 month</div>
+  </div>
+</section>
 
-    <div class="grid">
-      <div class="card">
-        <h3>YouTube Shorts</h3>
-        <p>69M+ views using viral strategy.</p>
-      </div>
-
-      <div class="card">
-        <h3>Twitter Campaign</h3>
-        <p>100K+ impressions via trending content.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-<section class="section">
+<!-- CERTIFICATIONS -->
+<section class="section fade">
   <h2>🏆 Certifications & Testimonials</h2>
 
   <div class="grid">
 
-    <!-- CERTIFICATE -->
-    <div class="card cert-card" onclick="openModal('meta-cert.png')">
-      <img src="images/meta-cert.png" alt="Meta Certification">
-      
-      <div class="badge">Verified</div>
-
-      <h3>Meta Digital Marketing Certification</h3>
-      <p>Official certification from Meta (Facebook)</p>
-
+    <div class="card cert-card">
+      <div class="image-container" onclick="openModal('meta-cert.png')">
+        <img src="images/meta-cert.png">
+        <div class="badge">Verified</div>
+      </div>
+      <h3>Meta Certification</h3>
       <a href="https://www.credly.com/badges/f6acf882-f28a-403c-a576-65019797292f" target="_blank">
         View Credential →
       </a>
     </div>
 
-    <!-- TESTIMONIAL -->
-    <div class="card cert-card" onclick="openModal('testimonial.png')">
-      <img src="images/testimonial.png" alt="Recommendation Letter">
-
-      <div class="badge">Trusted</div>
-
-      <h3>Letter of Recommendation</h3>
-      <p>From CollegePur Marketing Team</p>
-
-      <a href="images/testimonial.png" target="_blank">
-        View Full Letter →
+    <div class="card cert-card">
+      <div class="image-container" onclick="openModal('testimonial.png')">
+        <img src="testimonial.png">
+        <div class="badge">Trusted</div>
+      </div>
+      <h3>Recommendation Letter</h3>
+      <a href="testimonial.png" target="_blank">
+        View Full →
       </a>
     </div>
 
   </div>
 </section>
 
-<!-- IMAGE MODAL -->
+<!-- CTA -->
+<section class="cta" id="contact">
+  <h2>Let’s Grow Your Brand 🚀</h2>
+  <a href="mailto:kadatatluvijay@gmail.com">Contact Me</a>
+</section>
+
+<!-- STICKY CTA -->
+<a href="#contact" class="sticky-btn">Hire Me</a>
+
+<!-- MODAL -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImg">
 </div>
 
+<!-- JS -->
 <script>
+/* COUNTER */
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  let update = () => {
+    let target = +counter.getAttribute('data-target');
+    let count = +counter.innerText;
+    let inc = target / 100;
+
+    if(count < target){
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(update, 20);
+    } else {
+      counter.innerText = target.toLocaleString();
+    }
+  }
+  update();
+});
+
+/* MODAL */
 function openModal(src) {
   document.getElementById("imageModal").style.display = "flex";
   document.getElementById("modalImg").src = src;
 }
-
 function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
-</script>
 
-  <!-- CTA -->
-  <section class="cta" id="contact">
-    <h2>Let’s Grow Your Brand 🚀</h2>
-    <p>Available for freelance & full-time roles</p>
-    <a href="mailto:kadatatluvijay@gmail.com">Contact Me</a>
-  </section>
+/* SCROLL ANIMATION */
+const faders = document.querySelectorAll('.fade');
+const appear = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+});
+faders.forEach(el => appear.observe(el));
+</script>
 
 </body>
 </html>
