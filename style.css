@@ -140,6 +140,59 @@ body {
   font-size: 0.85rem;
 }
 
+/* VIDEO SECTION */
+.video-grid {
+  gap: 15px;
+}
+
+.video-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.video-card:hover img {
+  transform: scale(1.05);
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+/* LINKEDIN POSTS */
+.post-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.post-card p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 /* CERTIFICATIONS */
 .cert-card {
   display: flex;
